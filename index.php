@@ -15,14 +15,26 @@ if (isset($_SESSION["username"])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sustainable Corporate Gifting</h1>
+            <p>Thoughtful, responsible, and impactful gifts that leave a lasting impression, not a footprint.</p>
+            <div class="hero-buttons">
+                <button onclick="openModal('login')" class="btn primary-btn">Login</button>
+                <button onclick="openModal('register')" class="btn secondary-btn">Register</button>
+                <!--<a href="#services" class="btn primary-btn">Explore Gifts</a>
+                <a href="#contact" class="btn secondary-btn">Get a Quote</a>-->
+            </div>
+        </div>
+    </section>
+    <!--<div class="container">
         <div class="hero">
             <h1>Welcome to EcoFeelia</h1>
             <p>Make an impact with every choice!</p>
             <button onclick="openModal('login')">Login</button>
             <button onclick="openModal('register')">Register</button>
         </div>
-    </div>
+    </div>-->
 
     <!-- Modal for Login & Register -->
     <div id="modal" class="modal">
